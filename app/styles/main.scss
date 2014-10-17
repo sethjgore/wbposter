@@ -1,0 +1,26 @@
+// bower:scss
+@import "../../bower_components/normalize-scss/_normalize.scss";
+// endbower
+
+@import "base/viewport";
+@import "normalize-scss/normalize";
+@import "bourbon/dist/bourbon";
+@import "neat/app/assets/stylesheets/neat-helpers";
+@import "base/config";
+@import "neat/app/assets/stylesheets/neat";
+//adds IS (modular styling helpers)
+@import "is/is";
+//adds FX (flexbox helpers)
+@import "fx/fx";
+//adds GUT (margin & padding placeholders)
+@import "gut/gut";
+//adds type sizing standards
+@import "base/type--sizing";
+//adds type appearance standards
+@import "base/type--appearance";
+// adds font standards;
+@import "base/type--font";
+//adds background directive
+@import "pages/directive.background";
+@import "pages/nav";
+@import "pages/directive.logo";
