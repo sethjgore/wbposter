@@ -31,7 +31,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         url: '/home',
         views: {
           'drawer' : {
-            templateUrl : 'views/pages/hello.html'
+            templateUrl : 'views/pages/hello.html',
+            controller: 'DrawerCtrl'
           },
           'main' : {
             templateUrl: 'views/main.html',

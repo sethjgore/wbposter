@@ -10,6 +10,27 @@
 /// <script type="text/javascript" src="http://fast.fonts.net/jsapi/3e9b43a4-17e3-4279-9a61-16c47c257c05.js"></script>
 //////////////////////
 
+
+$color-list : (
+
+  "main" #fef7e1,
+  "maindk" #fef1cd,
+  "green" #00c750,
+  "yellow" #fff88f,
+  "yellowdk" #f8de1b,
+  "orange" #ff7e29,
+  "red" #e13333,
+  "blue" #90cff4,
+  "bluedk" #008fd6,
+  "black"  #121212,
+  "blacker" #383838,
+  "blackest" #1c1c1c,
+  "white" #ffffff,
+  "shade" rgba(18, 18, 18, 0.18),
+  "shade-lt" rgba(255, 255, 255, 0.5),
+
+  );
+
 $theme-heading: Oswald;
 $theme-font: Avenir;
 $body-font-size: 2.2rem;
