@@ -39,5 +39,18 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             controller: 'MainCtrl'
           }
         },
+      })
+      .state('poster', {
+        url: '/poster',
+        views: {
+          'drawer' : {
+            templateUrl : 'views/pages/posterpiano.html',
+            controller: 'DrawerCtrl'
+          },
+          'main' : {
+            templateUrl: 'views/blank.html',
+            controller: 'MainCtrl'
+          }
+        },
       });
   });

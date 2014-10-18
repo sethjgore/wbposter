@@ -1,1 +1,1 @@
-proclaim as if you are the first individual to live because you are
+We barista useful stuff for humanity.

@@ -21,9 +21,13 @@
 // adds font standards;
 @import "base/type--font";
 @import "base/app";
+
+@import "piano/piano";
+@import "piano/color-piano.sass";
+@import "piano/text-piano.sass";
+@import "piano/poster-piano.sass";
+
 //adds background directive
 @import "pages/directive.background";
 @import "pages/nav";
 @import "pages/directive.logo";
-@import "pages/color-piano.sass";
-@import "pages/text-piano.sass";

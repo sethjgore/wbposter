@@ -1,0 +1,35 @@
+<section class="grid-poster-canvas">
+    <div class="grid-poster-piano">
+        <div flex="yes col" class="colors-piano flex flex--direction--col">
+            <div class="colors-piano-key isw10rem is__background--c-{{color}}" ng-repeat="color in data.colors" ng-click="data.backgroundColor = color" ng-mouseover="data.backgroundColor = color">
+            </div>
+        </div>
+    </div>
+
+    <!-- TEXTPIANO data.messageFont -->
+    <div class="grid-poster-text-piano">
+        <div class="text-piano flex is__background--c-{{data.backgroundColor}}">
+            <div class="text-piano-key flex flex--xy" ng-repeat="font in data.fonts" ng-click="data.messageFont = font" ng-mouseover="data.messageFont = font">
+                <span class="is__text--{{font}}">{{font}}</span>
+            </div>
+        </div>
+    </div>
+
+    <!--POSTERCANVAS-->
+    <div style="overflow-x: hidden; overflow-y: scroll;" class="poster--canvas is100vw is__background--c-{{data.backgroundColor}}">
+        <textarea class="is__text--giga p50 is__text--c-{{data.messageColor}} poster-canvas--textarea is90vh is__text--{{data.messageFont}} ">{{data.message}}</textarea></h1>
+    </div>
+
+    <!-- COLORPIANO data.messageColor -->
+    <div class="flex flex--direction--col">
+        <div class="colors-piano-key isw10rem is__background--c-{{color}}" ng-repeat="color in data.colors" ng-click="data.messageColor = color" ng-mouseover="data.messageColor = color">
+
+        </div>
+    </div>
+
+    <!-- COLORPIANO data.backgroundColor -->
+    <div class="flex flex--direction--col">
+        <div class="colors-piano-key isw10rem is__background--c-{{color}}" ng-repeat="color in data.colors" ng-click="data.backgroundColor = color" ng-mouseover="data.backgroundColor = color">
+        </div>
+    </div>
+</section>

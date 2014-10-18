@@ -1,15 +1,25 @@
 'use strict';
 
-app.factory('Config', ['', function(){
+app.factory('Config', ['Fonts', function(Fonts) {
 
-  var config = {};
+    var config = {};
+    config.app = {};
 
-  config.drawer.init.background = {'main' : true }
-  config.drawer.init.message = {'green' : true }
+    config.app.colorpiano = {};
+    config.app.colorpiano.init = {};
+    config.app.colorpiano.init.background = {
+        color: 'black'
+    };
+    config.app.colorpiano.init.message = {
+        color: 'yellowdk'
+    };
+    config.app.colorpiano.init.font= {
+        font : Fonts[1]
+    };
 
-  ver Config = {
-    all: config;
-  }
+    var Config = {
+        all: config,
+    }
 
+    return Config;
 }]);
-

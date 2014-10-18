@@ -1,0 +1,12 @@
+
+.text-piano
+  overflow-y: hidden
+  overflow-x: scroll
+  -webkit-overflow-scrolling: touch
+
+.text-piano-key
+  transition: .3s all ease-out
+  @extend .piano-key
+  flex: 1 0 17rem
+  &:hover
+    transform: translateY(-10vh)

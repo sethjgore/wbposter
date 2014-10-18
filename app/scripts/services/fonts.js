@@ -2,9 +2,13 @@ app.factory('Fonts', function() {
     var Fonts = {}
 
     var fonts = [
-        'Avenir Next',
-        'Proxima Nova',
-        'Oswald'
+        'AvenirNext',
+        'Vollkorn',
+        'Crimson',
+        'OldStandard',
+        'Rokkitt',
+        'Oswald',
+
     ];
 
     var Fonts = {

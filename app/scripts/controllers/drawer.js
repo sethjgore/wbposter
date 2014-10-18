@@ -1,19 +1,15 @@
-app.controller('DrawerCtrl', ['$scope', '$http', 'Fonts', 'Colors', function($scope, $http, Fonts, Colors) {
+'use strict';
+
+app.controller('DrawerCtrl', ['$scope', '$http', 'Fonts', 'Colors', 'Config', function($scope, $http, Fonts, Colors, Config) {
 
     $scope.data = {};
-    $scope.data.colors = null;
     $scope.data.fonts = Fonts.all;
     $scope.data.colors = Colors.all;
+    $scope.data.messageColor = Config.all.app.colorpiano.init.message.color;
+    $scope.data.backgroundColor = Config.all.app.colorpiano.init.background.color;
+    $scope.data.messageFont =
 
-    $scope.data.messageColor = 'black';
-    $scope.data.backgroundColor = 'black';
-    $scope.data.messageFont = $scope.data.fonts[1];
-
-    $http.get('scripts/services/colors.json').success(function(data) {
-
-    });
-
-
+    console.log($scope.data.messageFont);
 
     $scope.data.message = null;
 
