@@ -1,28 +1,29 @@
 <div class="flex flex--direction--col">
-  <div class="colors-piano-key is10vh isw10rem is__background--c-{{problem}}" ng-repeat="problem in data.colors" ng-click="data.backgroundColor = problem" ng-mouseover="data.backgroundColor = problem">
-  </div>
+    <div class="colors-piano-key is10vh isw10rem is__background--c-{{color}}" ng-repeat="color in data.colors" ng-click="data.backgroundColor = color" ng-mouseover="data.backgroundColor = color">
+    </div>
 </div>
-
-
 <!--POSTER-->
-<div style="overflow-x: hidden; overflow-y: scroll;" class="is100vw is90vh p50 is__background--c-{{data.backgroundColor}}"><h1 ng-style="{'font-size': attrs.messageFont}" class="is__text--c-{{data.messageColor}} is__text--{{data.messageFont}}">{{data.message}}</h1></div>
+<div style="overflow-x: hidden; overflow-y: scroll;" class="is100vw is90vh p50 is__background--c-{{data.backgroundColor}}">
+
+    <!-- TEXTPIANO data.messageFont -->
+    <div ng-hide="config.panel.fonts.show = false" class="text-piano flex flex--direction--col">
+        <div class="flex__item text-piano-key is10vh isw10rem" ng-repeat="font in data.fonts" ng-mouseover="data.messageFont = font">
+            <span class="is__text--{{font}}">{{font}}</span>
+        </div>
+    </div>
+
+    <h1 style="font-size: 8vw;" class="is__text--c-{{data.messageColor}} is__text--{{data.messageFont}}">{{data.message}}</h1>
+</div>
 
 <!-- COLORPIANO data.messageColor -->
 <div class="flex flex--direction--col">
-  <div class="colors-piano-key is10vh isw10rem is__background--c-{{problem}}" ng-repeat="problem in data.colors" ng-click="data.messageColor = problem" ng-mouseover="data.messageColor = problem">
+    <div class="colors-piano-key is10vh isw10rem is__background--c-{{color}}" ng-repeat="color in data.colors" ng-click="data.messageColor = color" ng-mouseover="data.messageColor = color">
 
-  </div>
+    </div>
 </div>
 
 <!-- COLORPIANO data.backgroundColor -->
 <div class="flex flex--direction--col">
-  <div class="colors-piano-key is10vh isw10rem is__background--c-{{problem}}" ng-repeat="problem in data.colors" ng-click="data.backgroundColor = problem" ng-mouseover="data.backgroundColor = problem">
-  </div>
+    <div class="colors-piano-key is10vh isw10rem is__background--c-{{color}}" ng-repeat="color in data.colors" ng-click="data.backgroundColor = color" ng-mouseover="data.backgroundColor = color">
+    </div>
 </div>
-
-<!-- TEXTPIANO data.messageFont -->
-<div class="flex flex--direction--col">
-  <div class="text-piano-key is10vh isw10rem is__background--c-{{problem}}" ng-repeat="problem in data.colors" ng-click="data.backgroundColor = problem" ng-mouseover="data.backgroundColor = problem">
-  </div>
-</div>
-
