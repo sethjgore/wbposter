@@ -40,11 +40,37 @@ app.config(function ($stateProvider, $urlRouterProvider) {
           }
         },
       })
+      .state('theory', {
+        url: '/theory',
+        views: {
+          'drawer' : {
+            templateUrl : 'views/pages/theory.html',
+            controller: 'TheoryCtrl'
+          },
+          'main' : {
+            templateUrl: 'views/blank.html',
+            controller: 'MainCtrl'
+          }
+        },
+      })
       .state('poster', {
         url: '/poster',
         views: {
           'drawer' : {
             templateUrl : 'views/pages/posterpiano.html',
+            controller: 'DrawerCtrl'
+          },
+          'main' : {
+            templateUrl: 'views/blank.html',
+            controller: 'MainCtrl'
+          }
+        },
+      })
+      .state('poster-alt',{
+        url: '/poster-alt',
+        views: {
+          'drawer' : {
+            templateUrl : 'views/pages/posterpiano-alt.html',
             controller: 'DrawerCtrl'
           },
           'main' : {
